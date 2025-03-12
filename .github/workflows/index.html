@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Краткое описание страницы">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/media.css">
+	<title>EcoHorizon</title>
+	<script language="JavaScript" type="text/javascript" src="assets/js/jquery-3.7.0.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			let col = window.scrollY/300
+			$('.header').css({'background-color': 'rgba(34, 34, 34, '+col+')'});
+    });
+	</script>
+</head>
+<body>
+	<div class="page">
+		<header class="header header--fixed">
+			<div class="header__content">
+				<a href="#" class="header__logo">EcoHorizon</a>
+				<nav class="header__nav">
+					<a href="#" class="header__nav-item">home</a>
+					<a href="#" class="header__nav-item">description</a>
+					<a href="#" class="header__nav-item">contacts</a>
+				</nav>
+			</div>
+		</header>
+		<div class="banner">
+			<div class="banner__welcome">
+				<div class="banner__main">
+					<div class="banner__content">
+						<div class="banner__box"></div>
+						<div class="banner__title">
+							Modern comfort with taking care of your budget
+						</div>
+						<div class="banner__subtitle">
+							<div class="banner__subtitle-text">the most affordable prices in the premium segment</div>
+						</div>
+						<div class="price">
+							<div class="price__list">
+								<div class="price__item">
+									<div class="price__item-inner">
+										<img class="price__icon" src='../assets/img/mark.svg'/>
+										<div class="price__content">
+											<div class="price__amount">
+												<p class="price__label price__label">starting price per m² from</p>
+												<p class="price__value">85,000 ₽</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item-inner">
+										<img class="price__icon" src='../assets/img/mark.svg'/>
+										<div class="price__content">
+											<div class="price__amount">	
+												<p class="price__label">Installment plan of </p><p class="price__value">0%</p> <p class="price__label">for 2 years</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="price__item">
+									<div class="price__item-inner">
+										<img class="price__icon" src='../assets/img/mark.svg'/>
+										<div class="price__content">
+											<div class="price__amount">
+												<p class="price__label">savings of up to</p><p class="price__value">1.5</p> <p class="price__label">million</p>
+												<p class="price__value">₽</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="button price--button">
+								<div class="button__text">Order</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="banner__bg"></div>
+			</div>
+			<div class="banner__image-container">
+				<img class='banner__image' src='/assets/img/img227.png'/>				
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="features">
+			<div class="features__container">
+				<div class="features__image-wrapper">
+					<img class='features__image' src='/assets/img/img118.png'/>
+				</div>
+				<div class="features__content">
+					<div class="features__list">
+						<div class="features__item">
+							<div class="features__icon-wrapper">
+								<div class="features__icon">									
+									<img src='/assets/img/item.png'/>
+								</div>
+							</div>
+							<div class="features__text">Reduction of utility bills by up to 40% due to solar panels and heat recovery
+							</div>
+						</div>
+						<div class="features__divider"></div>
+						<div class="features__item">
+							<div class="features__icon-wrapper">
+								<div class="features__icon">
+									<img src='/assets/img/item.png'/>
+								</div>
+							</div>
+							<p class="features__text">
+								Playgrounds with soft surfaces, sports and picnic areas under video surveillance
+							</p>
+						</div>
+						<div class="features__divider"></div>
+						<div class="features__item">
+							<div class="features__icon-wrapper">
+								<div class="features__icon">
+									<img src='/assets/img/item.png'/>
+								</div>
+							</div>
+							<div class="features__text">
+								Turnkey finishing from the best designers — move in immediately after purchase
+							</div>
+						</div>
+						<div class="features__divider"></div>
+						<div class="features__item">
+							<div class="features__icon-wrapper">
+								<div class="features__icon">
+									<img src='/assets/img/item.png'/>
+								</div>
+							</div>
+							<div class="features__text">
+								Concierge service, cleaning and online service management via a mobile app
+							</div>
+						</div>
+					</div>
+					<button class="button">
+						<div class="button__text">Order</div>
+					</button>
+				</div>
+				<div class="features__image-wrapper">
+					<img class='features__image' src='/assets/img/img98.png'/>
+				</div>
+			</div>
+		</div>
+		<div class="contact">			
+			<div class="contact__wrapper">
+				<div class="contact__container">
+					<div class="divider"></div>
+					<div class="contact__content">
+						<div class="contact__inner">
+							<div class="contact__title">Any questions?<br>Ask them to our to the manager!
+							</div>
+							<form class="form">
+								<div class="form__fields">
+									<input type='text' placeholder='Name' class='form__input form__input--text'>
+									<input type='mail' placeholder='E-mail' class='form__input form__input--text'>
+									<div class="form__checkbox">
+										<div class="form__checkbox-wrapper">										
+											<input type="checkbox" class='form__checkbox-input' id="privacy" name="privacy">
+										</div>
+										<div class="form__checkbox-label">
+											<label class='form__label' for="privacy">I accept Privacy policy</label>
+										</div>
+									</div>
+								</div>
+								<button class="form__submit">
+									<div class="form__submit-text">Submit Form</div>
+								</button>
+							</form>							
+						</div>
+						<div class="contact__image-wrapper">
+							<img class='contact__image' src='/assets/img/img83.png'/>
+						</div>
+					</div>
+					<div class="contact__photo-wrapper"><img class='contact__photo' src='/assets/img/photo.png'/></div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__divider"></div>
+				<nav class="footer__nav">
+					<a href="#" class="footer__nav-item">layouts</a>
+					<a href="#" class="footer__nav-item">pricing</a>
+					<a href="#" class="footer__nav-item">promotions</a>
+				</nav>
+				<div class="footer__divider"></div>
+				<div class="footer__content">
+					<div class="footer__logo">
+						<a href="#" class="footer__logo-text">EcoHorizon</a>
+					</div>
+					<div href="#" class="footer__social">
+						<a href="#">
+							<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ6SURBVHgB7VbNbtpAEJ7ZJcCt9AmaHqMWKT5F3HBQ77wB4QlCnwDyBNAnqHmD3CuKb7TqgUq0zTF+g8ItQLzTGWwqCyiwJjmVT1rtyrs783n+dgCO+N+Buw6MBv0yYlhFhS/AAmRoQqRviyXXhzQEhoP+aU7TRyIow2EIZgZdp+QGsC8BUZ5V1OflKRMYE9EHPhiABYjvKoU1kbGNRGbT5b/KDXTneWw4zuUYUmA47HdOHqiDCmpiTf7krp5Zs4D4XEUEglkWHcdxUylPkCicTOkeEQrGhG6x9M5P7qu1G2iqMhlD3bTKf379fC9D1iJDXLgQjaq6enaNABIWZCZLn2/DMn5QqbVMykAKiJu0pqYxcC6m5eEzce/swu3K/puLy9f7ylJgibtv/abEiKSnKJdvsjZAnuyBJawI/Bj0rjg2WrLm+YaD9KUM9vH7+FtrNPhUthBp5wKlscZ/C6KwWKp0Elud0aBX4Lxvaq3FCv7eMsECy6o4zylvde8xrxaEuHacgwVsCexOyzgunoWAUvBd5syDaazu5eYgZVdI+mABqxgIw/BGKV0WX//60htPY1fkH+F6GZwa0bORaWUBKaMS/bImxHZ2Rr9lJDNjWQuehUBEotLit76+NHX0WoIf1flKCyyRqhK+LVU8njx4AqxZgJAWkY7RO/4koFgWGTOBXQT41O1iA/FanlI4ECIjbkzYXZHsrQQk0ORxkXzOzk37EBJyNz+HNsRd0WovINgYAxhinaQpIbziKC9zme0iqAAsoDPwKpxSw0SFKVDckm3U9S8Bd9wXmrg1gwMgGaIJ62c2TWkS8rrFnYxVW86YiM83mf2II5L4A7zWLBxdYvF6AAAAAElFTkSuQmCC'/></a>
+						<a href="#">
+						<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHuSURBVHgB7ZZBTttAFIb/92zS7prewCwrQEo2tNkRqnZLOAG5QdobuCeoegLKCei6iDhISEA2jiDAktwA2AHB85ixYYMS49gTNuSTrBl73sz8fjPz3gAz3jqEgvT3gwrcqDl85/jVav0KE8IoiiM/iLjl3KgGclBcwNNAhDJyYE8A0xpyYE2ACFZODnZWMCHWBMSDkbPd7/6vTNQH9hjoM1UmccPT7u5mvxtkEmJNQKTkl9JP/CLUJJHw9Kgt+rnAawgwLNW++qxoXhS2BOhl6ePCMp9q9YEumlntrXogDy96IAyD8vt7tJRIAwKzsQYLn1fnYYlUAeFB4JXuJFCAhynBqZOzBLrq6SDTUSqq35Xoo82/N4z1wBwiX+vzdML8t/ilvo4pMdIDZt2JeSM2UPiJKTJSgHsTbzYT3zuPx+p1BRCUF5dMA7wAsXwwZYnoEjkYKWDocBLFRDLEc/LiPhJdIwdjr2T9w/Yl6eRidv9S7VtnlM3xUdBwINsoEBvGHkMR+RMbsLNpjuTzdvNNT/7b1HUS2kJOUi+lZ912YC4aiaX8lYj3knqkl4Y3jIf0CL2F5dUqcpIaCW/naN29VT4TteIUy9JMWhLHGS8NS+yjAJmu5efa3UJYU1CVZHruKR7uLS5/z5RyZ8xI4wEbC6xjPKpHAgAAAABJRU5ErkJggg=='/></a>
+						<a href="#">
+						<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAH7SURBVHgB7ZZPUhNBFMa/1w3jUo6QpQliMRtJVjJB1yYnINzAGxBPYHECwgmAvWFmYRnDhioq6nZuIC4lznt2ZzCVf0O1lZYN+VVlUv16uuurnq/fe8CKxw4VTVz344YmfgsPKFFJeSc6gauA75fxMYu04BOSzubLvYO58Gxg0Ou2SNGxCG4UqM3CP7EEitRThrSJsKEFjWfV+vnk/Nr8EtrN/+V9pVo/ggcGn7sETR8yRQ0znBKgihaxOQH4gor3UnBkcBlvX/XiEjzjJOC6/7FBIleBxiE8s+byUhboRP3iI+HsDJ5xEhCGkf2G7/AfcBJgsR4YZrgJa1E6jn0yMZ0bbB3YFSDdqkUJ/gEnAXceOA00dcxwnExo3cSA0nhsfl/7F+ktUzQp9D6cTKiYNgqmSvZhk5Z5WH+kNhZoOYUjztfw3k2IDzare83bgMJcDLbtJ3NaCw9Udl6PbsfIrJJnOs744QQsw0qA0zUUcGrKGYSnS7M1HBUUmoDoBxxwOoGt2pskAzeHT1R7Mq7FuH5IzamY6SFk+DucrftFOGfCF3dOn6S8INmUHRPQXwpPQJkOBr6Q4r3mToAVn2mofQIdfvsSi2lMlmzJYFuyURlXgmR2fmFTOuhddEhhHx4RxsnzWr0FFwG5iG7LzL6CBxTJeWWBh1assPwBFc+0uFhEqiYAAAAASUVORK5CYII='/></a>
+						<a href="#">
+						<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIdSURBVHgB7VZLctNAEO03Q7zOEcQOcEh5FZMqqmKbz5bkBElOEN+AI0BOYOUEwBoSyVVUGWfjAE62+AZkycKapsdGthQs6xeKSpXfQp9Wf56mPzNEK/xngEpi0POcNQRtBfWKiZwFKqNqvXU/yf4elcBV33vDxG0iRZys5izzUZjAPLgAcE0wPnm8/cKP6lz2zzjNTyECV+feETO3memaOdi7GTgPFOXEYOCt2+D2WQPtMsEtcq/A2i+zSwqO/L3/8EnzZEZMirGizeuYcmoCChBgUG3aOvwhFlyxJx+dBSYjuk0CYKzb5jWS/1CmVVCTbDpsqCvE3JhBoC7oNgksgjJCSqoJGj+qWy03j20qgeFnr4aKOZoJmHYSlZkbl+ennahIk7p4sNU8pqIESEvFM/ZviivAzzknM4KEIjt0GAdRvWBaiSUIhJBhw4HphgGrkfazrfit/2lvkoq5QQOK9m23LHObmUAgwTe3n7lJ3zfrz99H379/OZVugWSFu7QEuQdRVijgT60Yf5le5hXQmnaGPW/qXNH1o3oz/sc9r4HYxsM1e02blNlrQIoLig8mj5OAH5uhc8n/ruyH7/4yScl/NgLB+C1Dz4YqgIbcHJbBE8rCOSAYSc79me1YHae5TyWw8fSlnWSH4fuwd+ZKdTsLlQF/o946pBz4Z0W4IrAicGcIFD4PaIWOnHo7VBL5VwCceMKBMV9phbuG3yEUwVzLzCIDAAAAAElFTkSuQmCC'/></a>
+						<a href="#">
+						<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALISURBVHgB7VZNchJBFH7dw9+SI5CdlqQKNkaqrHKGlG6DJwBPQDxByAkMJxBOIO7VwSqrUokLKDW6DDeQpSDTz3490zAMPTBYwY18C+iZ/nnf977XDwD2+N/B4B/h2ye3ZGXhhCGM7z102vp9CnaIwcDNZydQB441RLSFmE/tlsDXS9dmzKvBBOvIIA+4mEOEfnjtnRGIqgXg84AcWE8glhmHupz7eKcESC3nookTtLVaGXQsA7WZ5fWKR8+GtO7m6sPA3yH64f1/VYSkNjeDpufhKaOgAUgtond+WHnaj67PTPEnjR8cVZdibpUBUmtZeIZTWVDEni3UznL8olx2xqZ91tSzyZKo/4kI6Ovjq8U8BimW474Qoh1VawJDZoMiu+x/LAHT9QnUqoKaZqFbLldX1H6/dptUeuF7TuCMPfFHy/4rchBRCymvIbfUtbekVn52EUVvndofn90zIbAlhyPp80FYTJz/KxlgaXwjgxcCakMmWCdOrSm4Ijtjz8Nz6/wn8PCDPKQ7f0AoIRcl+LWo8gTBneJjZ7gkivwHs/8rBA4rxy0u2AEK8Ikga2Q43t5cv39Nqdw2uAqwxn9FEOKUXboFD7BF3StQ8LL46Phim+Cb/FcE4wjcrzijYqXaEMJz1ELOTvTcl6t3taDgpELxwhSc4PsPsf6vJaAxy6WGfrMBW9vgZay+/Bqpw4G/GshsmfZu8j8RAdXdEN7SOD0RDf0OhdCHFmSduCYSm/xPRICA4HXU4sAGajiM87rfI1QmVkgE2SrReF3/SEQgbAM1K+2/pHYub41jIpHE/8QEwjbIZjWgLkk/QHQrqFhNJJL4n5iAOiiwIcDod5a39IOJhPQ/uDXx/itBkBDkaXqCtzS2kJUpaHQN9Q4hgxMJ/S7u/mskzgDZQIGp6ZiCEyKZ2Og/YSd/y1UXZeIUZrwT16T22EPjD94W0gJlK8ycAAAAAElFTkSuQmCC'/></a>
+						<a href="#">
+						<img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI1SURBVHgB7ZZLctpAEIa7RzKwC0dQllTsKmsVswNcWds+gcMNnBMEThDfgPgEIQcAaedHFlCV2M4uOgJLiqBpd4MfY4wAjXB5w1eFBmlG0/90j3oaYMOGNwYXdfZ6QTE/gorWUAQLCCAaF6Dv+9UBpBHQOw+8vEMtIqjAOkD6PopV0y9Xoxdd84znFAX815N7FhHyNQI7yx7i4yKikcbqrAhMMi6G/+fxaJH7VuGW59RKf2NThxMROfTNOV1z8BbqQ1EtA7f3alVYA6Xpio9urrqBhNQd6hO+bzz0K3MwIh5Lq3VchzUTx3FzYlDhgflczYzblctO+VOYNNGfi87J9WX33+2v4CukYFxw+6aNJAHLIZQJPK2pIUL+XnQPVnktaS+lF/AcL0ZoX191WrKBwQJrAbGmOnuhyRtrwF75nEPqpQ1LJgHCTnm/4RD6pOGMP+jiQ1jSzJE1BDDkHyp6B5ZkEiAu32LXS5KRUEhIPnysvU8zhwuWOApbbJBzh9xh2yH4UirXIkiJtYB7Iklai/LGMuaGQI7hxDeQ+qa7sxgXZj0g2WrXHY4l2YTzXtje2z/l5hRS8vs8qEwqhKmNR555gFf1U1rHcVJ/z8tQilrSItFZooBxQcnKIjm1bi47P2yzm4mEU05CmNYXEZJqm/0vCpLp+f1UkPAuD8myIEFAz6iqIsUFSWlRQWKKiIEaqOAY1oAUN5wx66VVSjITcZ9sSATlgQXsyUGcc8KsVdWGDa/KHWqs+rICVqTgAAAAAElFTkSuQmCC'/></a>
+					</div>
+					<button class="button button--light">
+						<div class="footer__button__text">order</div>
+					</button>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__copyright">© 2025, Copyright.</div>
+					<a href="#" class="footer__policy">Privacy policy</a>
+					<a href="#" class="footer__terms">Terms of Use</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- jQuery -->
+</body>
+</html>
